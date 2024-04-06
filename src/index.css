@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+h1 {
+  font-family: 'NanumSoMiCe';
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'NanumMyeongjo';
+  font-family: 'NanumMyeongjoBold';
+  font-family: 'NanumMyeongjoExtraBold';
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -8,6 +17,10 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Noto Sans KR', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.name{
+  font-family: 'NanumMyeongjoBold';
 }

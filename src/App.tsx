@@ -1,4 +1,5 @@
 import { Route, Link, Routes } from "react-router-dom";
+import './less/app.less';
 
 //routing components
 import Home from "./page/Home";
@@ -7,8 +8,8 @@ import Home from "./page/Home";
 
 function App() {
   return (
-    <div className="App">
-      <div>
+    <div>
+      <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
