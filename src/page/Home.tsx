@@ -5,9 +5,9 @@ import PhoneIcon from "../components/PhoneIcon";
 
 const Home = () => {
   const unityContainerStyle = {
-    width: "720px", // 너비 조절
-    height: "720px", // 높이 조절
-    // border: "1px solid black",
+    width: "100%",
+    maxWidth: "720px",
+    aspectRatio: 1,
   };
 
   const { unityProvider, isLoaded } = useUnityContext({
@@ -58,7 +58,7 @@ const Home = () => {
 
   return (
     <div className="d-flex justify-content-center">
-      <div style={{ width: unityContainerStyle.width }}>
+      <div style={{ width: unityContainerStyle.width, maxWidth:"720px" }}>
         <div className="d-flex flex-column justify-content-start">
           <h1>5월</h1>
           <br />
@@ -69,7 +69,7 @@ const Home = () => {
         <Unity unityProvider={unityProvider} style={unityContainerStyle} />
         <br />
 
-        <div className="contents">
+        <div className="container">
           <div className="d-flex justify-content-end">
             <h3>
               <p className="name">황하림 / 김안선</p>
