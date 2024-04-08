@@ -19,9 +19,9 @@ const Home = () => {
 
 
 
-  const CallButton: React.FC<{number:string}> = (number) => {
+  const CallButton: React.FC<{number: string}> = ({ number }) => {
     return (
-      <a href={`tel:${number}`}className="call-button">
+      <a href={`tel:${number}`} className="call-button">
         <PhoneIcon/> 
       </a>
     );
@@ -102,7 +102,7 @@ const Home = () => {
           <br />
 
           <div className="d-flex justify-content-center">
-            <div className="card text-primary border-primary  mb-3" style={{ width: "36rem" }}>
+            <div className="card text-primary border-primary  mb-3" style={{ width: "36rem", minWidth:"580px"  }}>
               <div className="card-header d-flex justify-content-around">
                 <b>신랑</b> <b>신부</b>
               </div>
@@ -131,7 +131,7 @@ const Home = () => {
           </div>
           <div className="d-flex justify-content-center">
             <div className="d-flex justify-content-around">
-              <div className="card text-primary border-primary  mb-3" style={{ width: "18rem" }}>
+              <div className="card text-primary border-primary  mb-3" style={{ width: "18rem", minWidth:"240px" }}>
                 <div className="card-header d-flex justify-content-around">
                   <b>신랑측</b>
                 </div>
@@ -155,7 +155,7 @@ const Home = () => {
 
               <div></div>
 
-              <div className="card text-primary border-primary  mb-3" style={{ width: "18rem" }}>
+              <div className="card text-primary border-primary  mb-3" style={{ width: "18rem", minWidth:"240px"  }}>
                 <div className="card-header d-flex justify-content-around">
                   <b>신부측</b>
                 </div>
@@ -185,9 +185,9 @@ const Home = () => {
               <small>Tel. 02-3673-5000</small>
             </a>
             <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
-              <img width={"680px"} src="./WeddingServivorWeb/map01.png"></img>
+              <img style={{minWidth:"460px", width:"100%"}} src="./WeddingServivorWeb/map01.png"></img>
             </a>
-            <a className="list-group-item list-group-item-dark">
+            <a className="list-group-item list-group-item-light">
               <div className="d-flex justify-content-around">
                 <a href="https://map.naver.com/p/entry/place/11540622?c=14.02,0,0,0,dh">
                   <img
@@ -248,9 +248,9 @@ const Home = () => {
                     <small>Tel. 043-744-7333</small>
                   </a>
                   <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
-                    <img width={"680px"} src="./WeddingServivorWeb/map02.png"></img>
+                    <img  style={{minWidth:"460px", width:"100%"}}  src="./WeddingServivorWeb/map02.png"></img>
                   </a>
-                  <a className="list-group-item list-group-item-dark">
+                  <a className="list-group-item list-group-item-light">
                     <div className="d-flex justify-content-around">
                       <a href="https://map.naver.com/p/search/%EC%A7%80%EC%A0%84%EB%B7%94%ED%8E%98/place/17738419?c=16.93,0,0,0,dh&isCorrectAnswer=true">
                         <img
