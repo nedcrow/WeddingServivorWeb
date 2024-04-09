@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/WeddingServivorWeb/static/css/main.57706ffd.css",
-    "main.js": "/WeddingServivorWeb/static/js/main.4ff60c53.js",
+    "main.css": "/WeddingServivorWeb/static/css/main.3c9475ec.css",
+    "main.js": "/WeddingServivorWeb/static/js/main.b533fd16.js",
     "static/js/453.1875c139.chunk.js": "/WeddingServivorWeb/static/js/453.1875c139.chunk.js",
     "static/media/app.less": "/WeddingServivorWeb/static/media/app.9f1d0c356440929ec954.less",
     "index.html": "/WeddingServivorWeb/index.html",
-    "main.57706ffd.css.map": "/WeddingServivorWeb/static/css/main.57706ffd.css.map",
-    "main.4ff60c53.js.map": "/WeddingServivorWeb/static/js/main.4ff60c53.js.map",
+    "main.3c9475ec.css.map": "/WeddingServivorWeb/static/css/main.3c9475ec.css.map",
+    "main.b533fd16.js.map": "/WeddingServivorWeb/static/js/main.b533fd16.js.map",
     "453.1875c139.chunk.js.map": "/WeddingServivorWeb/static/js/453.1875c139.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.57706ffd.css",
-    "static/js/main.4ff60c53.js"
+    "static/css/main.3c9475ec.css",
+    "static/js/main.b533fd16.js"
   ]
 }
