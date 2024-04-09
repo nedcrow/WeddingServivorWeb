@@ -32,6 +32,9 @@ const 피로연:React.FC = () =>{
                 <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
                   <img style={{ minWidth: "460px", width: "100%" }} src="./WeddingServivorWeb/map02.png"></img>
                 </a>
+
+                <br />
+
                 <a className="list-group-item list-group-item-light">
                   <div className="d-flex justify-content-around">
                     <a href="https://map.naver.com/p/search/%EC%A7%80%EC%A0%84%EB%B7%94%ED%8E%98/place/17738419?c=16.93,0,0,0,dh&isCorrectAnswer=true">

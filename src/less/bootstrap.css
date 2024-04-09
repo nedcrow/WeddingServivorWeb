@@ -89,6 +89,7 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #888;
   --bs-body-color-rgb: 136, 136, 136;
+  --bs-body-color-primary-rgb: 215, 235, 233;
   --bs-body-bg: #fff;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-emphasis-color: #000;
@@ -4401,7 +4402,7 @@ textarea.form-control-lg {
   --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
   --bs-card-cap-padding-y: 0.5rem;
   --bs-card-cap-padding-x: 1rem;
-  --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+  --bs-card-cap-bg: rgba(var(--bs-body-color-primary-rgb), 1);
   --bs-card-cap-color: ;
   --bs-card-height: ;
   --bs-card-color: ;

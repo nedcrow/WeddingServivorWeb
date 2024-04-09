@@ -12,6 +12,9 @@ const WeddingHall:React.FC = () => {
             <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
               <img style={{minWidth:"460px", width:"100%"}} src="./WeddingServivorWeb/map01.png"></img>
             </a>
+
+            <br />
+            
             <a className="list-group-item list-group-item-light">
               <div className="d-flex justify-content-around">
                 <a href="https://map.naver.com/p/entry/place/11540622?c=14.02,0,0,0,dh">

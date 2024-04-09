@@ -3,6 +3,7 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 import PhoneIcon from "../components/PhoneIcon";
 import CallButton from "../components/CallButton";
 import FoldingConnect from "../components/FoldingConnect";
+import 피로연 from "../components/피로연";
 
 const Home = () => {
   const unityContainerStyle = {
@@ -94,6 +95,15 @@ const Home = () => {
                   </p>
                 }
               />
+              <br />
+              <br />
+              <br />
+
+              <div className="d-flex justify-content-center">
+                <div style={{ width: "36rem" }}>
+                  <피로연></피로연>
+                </div>
+              </div>
               <br />
               <br />
               <br />
