@@ -30,7 +30,11 @@ const 피로연:React.FC = () =>{
                   <small>Tel. 043-744-7333</small>
                 </a>
                 <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
-                  <img style={{ minWidth: "460px", width: "100%" }} src="./WeddingServivorWeb/map02.png"></img>
+                  <img style={{ minWidth: "460px", width: "100%" }} src={
+                    process.env.NODE_ENV === 'development' ?
+                     "./WeddingServivorWeb/map02.png" : 
+                     "map02.png"
+                     }></img>
                 </a>
 
                 <br />

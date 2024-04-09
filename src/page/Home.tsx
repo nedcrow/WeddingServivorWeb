@@ -57,7 +57,7 @@ const Home = () => {
 
           <img
             style={{ width: unityContainerStyle.width, maxWidth: "720px" }}
-            src="WeddingServivorWeb/wedding_letter_inside.png"
+            src={process.env.NODE_ENV === 'development' ? '/WeddingServivorWeb/wedding_letter_inside.png' : 'wedding_letter_inside.png'}
           ></img>
 
           <div className="rounded-bottom-3">

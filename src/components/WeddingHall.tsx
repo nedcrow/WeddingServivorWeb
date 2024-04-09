@@ -10,11 +10,15 @@ const WeddingHall:React.FC = () => {
               <small>Tel. 02-3673-5000</small>
             </a>
             <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
-              <img style={{minWidth:"460px", width:"100%"}} src="./WeddingServivorWeb/map01.png"></img>
+              <img style={{minWidth:"460px", width:"100%"}} src={
+                    process.env.NODE_ENV === 'development' ?
+                     "./WeddingServivorWeb/map02.png" : 
+                     "map01.png"
+                     }></img>
             </a>
 
             <br />
-            
+
             <a className="list-group-item list-group-item-light">
               <div className="d-flex justify-content-around">
                 <a href="https://map.naver.com/p/entry/place/11540622?c=14.02,0,0,0,dh">
