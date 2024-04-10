@@ -31,7 +31,9 @@ const Home = () => {
     const onlyNumber= account.replace(/\D/g, '');
     return (
       <div className="d-flex flex-row justify-content-start">
-        <p className="mb-0 mx-2" style={{ fontSize: "14.5px"}}>{`${name} ${account}`}</p>
+        <div className="d-flex flex-column justify-content-center">
+        <p className="mb-0 mx-1" style={{ fontSize: "13.2px"}}>{`${name} ${account}`}</p>
+        </div>        
         <button
           style={{
             background: "none",
@@ -43,7 +45,7 @@ const Home = () => {
             // alert("복사");
           }}
         >
-          <CopySVG width="18px" height="18px" />
+          <CopySVG width="16px" height="16px" />
         </button>
       </div>
     );

@@ -29,7 +29,7 @@ const WeddingContents: React.FC = () => (
             <td rowSpan={2} style={{ verticalAlign: "middle" }}>
               <img
                 src={process.env.NODE_ENV === "development" ? "./WeddingServivorWeb/me.png" : "me.png"}
-                style={{ transform: "scaleX(-1)" }}
+                style={{ transform: "scaleX(-1)", width:"60px" }}
               />
             </td>
           </tr>
@@ -55,7 +55,7 @@ const WeddingContents: React.FC = () => (
             <td rowSpan={2} style={{ verticalAlign: "middle" }}>
               <img
                 src={process.env.NODE_ENV === "development" ? "./WeddingServivorWeb/her.png" : "her.png"}
-                style={{ transform: "scaleX(-1)" }}
+                style={{ transform: "scaleX(-1)", width:"60px"}}
               />
             </td>
           </tr>
