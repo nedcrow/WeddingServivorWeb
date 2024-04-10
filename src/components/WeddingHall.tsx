@@ -1,18 +1,30 @@
 const WeddingHall:React.FC = () => {
     return (
       <div className="d-flex justify-content-center" style={{ maxWidth: "36rem", padding: 12 }}>
-        <div className="card border-primary" style={{ minWidth: "240px", width: "100%", padding: "20px" }}>
-          <h2>SW컨벤션</h2>
-          <p className="mb-1">서울 종로구 지봉로 19 시즌빌딩 11층</p>
-          <small>Tel. 02-3673-5000</small>
+        <div className="" style={{ minWidth: "240px", width: "100%", padding: "20px" }}>
+          <div className="d-flex flex-column justify-content-center text-black">
+            <div className="d-flex justify-content-center">
+              <p className="mb-1">SW컨벤션</p>
+            </div>
+            <div className="d-flex justify-content-center">
+              <p className="mb-1">서울 종로구 지봉로 19 시즌빌딩 11층</p>
+            </div>
+            <div className="d-flex justify-content-center">
+              <small>Tel. 02-3673-5000</small>
+            </div>
+          </div>
+          <br />
 
-          <img
-            style={{ minWidth: "240px", width: "100%" }}
-            src={process.env.NODE_ENV === "development" ? "./WeddingServivorWeb/map02.png" : "map01.png"}
-          ></img>
+          <a href="https://map.naver.com/p/entry/place/11540622?c=14.02,0,0,0,dh">
+            <img
+              style={{ minWidth: "240px", width: "100%" }}
+              src={process.env.NODE_ENV === "development" ? "./WeddingServivorWeb/map01.png" : "map01.png"}
+            ></img>
+          </a>
 
           <br />
-          <div className="d-flex justify-content-around">
+          <br />
+          {/* <div className="d-flex justify-content-around">
             <a href="https://map.naver.com/p/entry/place/11540622?c=14.02,0,0,0,dh">
               <img
                 width={64}
@@ -33,36 +45,36 @@ const WeddingHall:React.FC = () => {
             </a>
           </div>
           <br />
-          <br />
+          <br /> */}
 
           <table className="table table-borderless">
-              <tbody>
-                <tr>
-                  <th rowSpan={2} scope="row" style={{verticalAlign:"middle"}}>
-                    지하철
-                  </th>
-                  <td colSpan={2}>{"1, 6호선 동묘앞역 하차 6번출구"}</td>
-                </tr>
-                <tr>
-                  <td colSpan={2}>{"4호선 동대문역 하차 4번 출구"}</td>
-                </tr>
-                <tr>
-                  <th rowSpan={2} scope="row" style={{verticalAlign:"middle"}}>
-                    버스
-                  </th>
-                  <td>{"동묘앞역 6번 출구 하차"}</td>
-                  <td>{"142"}</td>
-                </tr>
-                <tr>
-                  <td>{"동묘앞역 하차"}</td>
-                  <td>{"1014"}</td>
-                </tr>
-                {/* <tr>
+            <tbody style={{ fontSize: "14.5px" }}>
+              <tr>
+                <th rowSpan={2} scope="row" style={{ verticalAlign: "middle" }}>
+                  지하철
+                </th>
+                <td colSpan={2}>{"1, 6호선 동묘앞역 하차 6번출구"}</td>
+              </tr>
+              <tr>
+                <td colSpan={2}>{"4호선 동대문역 하차 4번 출구"}</td>
+              </tr>
+              <tr>
+                <th rowSpan={2} scope="row" style={{ verticalAlign: "middle" }}>
+                  버스
+                </th>
+                <td>{"동묘앞역 6번 출구 하차"}</td>
+                <td>{"142"}</td>
+              </tr>
+              <tr>
+                <td>{"동묘앞역 하차"}</td>
+                <td>{"1014"}</td>
+              </tr>
+              {/* <tr>
                   <th scope="row">{"SW\n컨벤션"}</th>
                   <td>{"도로명: 서울 종로구 지봉로 19 시즌빌딩 11층\n지번: 서울 종로구 창신동 328-18"}</td>
                 </tr> */}
-              </tbody>
-            </table>
+            </tbody>
+          </table>
         </div>
       </div>
     );

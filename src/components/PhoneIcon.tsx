@@ -4,8 +4,8 @@ const PhoneIcon: React.FC = () => (
   <div>
     <svg
       fill="#000000"
-      height="64"
-      width="64"
+      height="26"
+      width="26"
       version="1.1"
       id="Capa_1"
       viewBox="0 0 27.442 27.442"

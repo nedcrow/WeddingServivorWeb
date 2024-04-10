@@ -2,7 +2,7 @@ const 피로연:React.FC = () =>{
     return (
       <div id="피로연">
         <div className="accordion" id={`accordionMap`}>
-          <div className="accordion-item">
+          <div className="accordion-item border-0">
             <h2 className="accordion-header" id={`headingMap`}>
               <button
                 className="accordion-button collapsed"
@@ -12,7 +12,7 @@ const 피로연:React.FC = () =>{
                 aria-expanded="false"
                 aria-controls="collapseOne"
               >
-                신랑측 피로연 약도
+                <div className="text-black">신랑 측 피로연 약도</div>
               </button>
             </h2>
             <div
@@ -22,20 +22,28 @@ const 피로연:React.FC = () =>{
               data-bs-parent={`#accordionMap`}
             >
               <div className="accordion-body">
-                <div className="d-flex w-100 justify-content-between">
-                  <h2>지전뷔페</h2>
+                <div className="d-flex flex-column justify-content-center text-black">
+                  <div className="d-flex justify-content-center">
+                    <p className="mb-1">지전뷔페</p>
+                  </div>
+                  <div className="d-flex justify-content-center">
+                    <p className="mb-1">충북 영동군 영동읍 중앙로 22-1</p>
+                  </div>
+                  <div className="d-flex justify-content-center">
+                    <small>Tel. 043-744-7333</small>
+                  </div>
                 </div>
-                <p className="mb-1">충북 영동군 영동읍 중앙로 22-1</p>
-                <small>Tel. 043-744-7333</small>
-                <img
-                  style={{ minWidth: "260px", width: "100%" }}
-                  src={process.env.NODE_ENV === "development" ? "./WeddingServivorWeb/map02.png" : "map02.png"}
-                ></img>
-
+                <br />
+                <a href="https://map.naver.com/p/search/%EC%A7%80%EC%A0%84%EB%B7%94%ED%8E%98/place/17738419?c=16.93,0,0,0,dh&isCorrectAnswer=true">
+                  <img
+                    style={{ minWidth: "260px", width: "100%" }}
+                    src={process.env.NODE_ENV === "development" ? "./WeddingServivorWeb/map02.png" : "map02.png"}
+                  ></img>
+                </a>
                 <br />
                 <br />
 
-                <div className="d-flex justify-content-around">
+                {/* <div className="d-flex justify-content-around">
                   <a href="https://map.naver.com/p/search/%EC%A7%80%EC%A0%84%EB%B7%94%ED%8E%98/place/17738419?c=16.93,0,0,0,dh&isCorrectAnswer=true">
                     <img
                       width={64}
@@ -54,7 +62,7 @@ const 피로연:React.FC = () =>{
                       src="data:image/png;base64,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"
                     ></img>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

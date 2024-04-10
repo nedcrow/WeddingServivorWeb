@@ -3,7 +3,7 @@ import CallButton from './CallButton';
 
 const Connect_Couple: React.FC = () => (
     <div id="contact-couple" className="d-flex justify-content-center">
-    <div className="card text-primary border-primary  mb-3" style={{ width: "36rem", minWidth:"580px"  }}>
+    <div className="card text-primary border-0 mb-3" style={{ width: "36rem", minWidth:"580px"  }}>
       <div className="card-header d-flex justify-content-around">
         <b>신랑</b> <b>신부</b>
       </div>

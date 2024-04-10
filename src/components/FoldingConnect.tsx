@@ -4,7 +4,7 @@ const FoldingConnect:React.FC<{id: string, name:string, value:React.JSX.Element}
     return (
 <div className="d-flex justify-content-around">
             <div className="accordion" id={`accordion-${id}`} style={{ width: "36rem", minWidth: "120px" }}>
-              <div className="accordion-item">
+              <div className="accordion-item border-0">
                 <h2 className="accordion-header" id={`heading-${id}`}>
                   <button
                     className="accordion-button collapsed"
@@ -14,7 +14,7 @@ const FoldingConnect:React.FC<{id: string, name:string, value:React.JSX.Element}
                     aria-expanded="false"
                     aria-controls="collapseOne"
                   >
-                    {name}
+                    <div className="text-black">{name}</div> 
                   </button>
                 </h2>
                 <div
