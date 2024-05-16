@@ -24,6 +24,9 @@ const 피로연:React.FC = () =>{
               <div className="accordion-body">
                 <div className="d-flex flex-column justify-content-center text-black">
                   <div className="d-flex justify-content-center">
+                    <p className="mb-1">5월 11일(토) 오전 11시</p>
+                  </div>
+                  <div className="d-flex justify-content-center">
                     <p className="mb-1">지전뷔페</p>
                   </div>
                   <div className="d-flex justify-content-center">

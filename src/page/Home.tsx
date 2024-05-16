@@ -228,6 +228,14 @@ const Home = () => {
               {/* <div className="d-flex justify-content-center">
                 <h5>감사합니다.</h5>
               </div> */}
+              <div className="d-flex justify-content-center">
+                <img
+                  style={{ minWidth: "160px", width: "36%" }}
+                  src={process.env.NODE_ENV === "development" ? "./WeddingServivorWeb/ANH_Hello.gif" : "ANH_Hello.gif"}
+                ></img>
+                <br/>
+              </div>
+
               <div className="d-flex text-black justify-content-center font" style={{ fontSize: "10px" }}>
                 {" "}
                 DESIGNED BY HARIM{" "}
